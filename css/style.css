@@ -28,11 +28,8 @@ img {
 
 /* Utilties */
 .conteiner {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
-    border: 2px dotted white;
-    background-color: #e53170;
-    height: 100px;
 }
 
 .flex {
@@ -51,13 +48,14 @@ header {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    height: 80px;
 }
 
 .btn-windows {
     display:flex;
     align-content: center;
     justify-content: flex-end;
-    height: 50px;
+    height: 100%;
     align-items: center;
 }
 
@@ -86,9 +84,15 @@ header {
 }
 
 /* #MAIN */
+
+main {
+    height: calc(100vh - 200px);
+    overflow: auto;
+}
+
 .zoom-img {
     background-color: yellowgreen;
-    width: calc(100% / 7);
+    width: calc((100% / 7) - 9px);
     position: relative;
 }
 .zoom-img div {
@@ -97,4 +101,11 @@ header {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 4px 6px;
+}
+footer {
+    background-color: #222222;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
 }
