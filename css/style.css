@@ -7,8 +7,6 @@ box-sizing: border-box;
 
 /* Custom PROPERTIES */
 :root {
-    --title-color: #e53170;
-    --link-color: #00abe9;
 }
 
 
@@ -17,18 +15,69 @@ box-sizing: border-box;
 /* Generics */
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 
 
 /* Utilties */
 .conteiner {
-    max-width: 1140px;
+    max-width: 1920px;
     margin: 0 auto;
+    border: 2px dotted white;
+    background-color: #e53170;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* Header */
+.debag {
+    border: 2px dotted white;
+}
 
-/* Main */
+/* #HEADER */
+header {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
 
-/* Footer */
+.btn-windows {
+    display:flex;
+    align-content: center;
+    justify-content: flex-end;
+    height: 50px;
+    align-items: center;
+}
+
+.btn-icon {
+    
+}
+
+.btn-icon.speaker a {
+    width: 140px;
+    display: block;
+}
+
+.btn-icon.close a {
+    width: 42px;
+    display: block;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #4a4a4a;
+    margin-left: 4px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.btn a:hover {
+    color: lightgray;
+}
+
+
+
