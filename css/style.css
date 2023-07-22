@@ -1,194 +1,176 @@
 /* Reset CSS */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} 
-
-/* Custom PROPERTIES */
-:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
-
 
 /* Generics */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: white;
-    background-color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: black;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
-
-
 
 /* Utilties */
 .conteiner {
-    width: 1925px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 .debug {
-    border: 2px dotted white;
+  border: 2px dotted white;
 }
 
 /* #HEADER */
 header {
-    background-color: black;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 20px;
-    height: 80px;
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 80px;
 }
 
 .btn-windows {
-    display:flex;
-    align-content: center;
-    justify-content: flex-end;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
 }
 
 .btn-icon.speaker a {
-    width: 140px;
-    display: block;
+  width: 140px;
+  display: block;
 }
 
 .btn-icon.close a {
-    width: 42px;
-    display: block;
+  width: 42px;
+  display: block;
 }
 
 .btn a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    background-color: #4a4a4a;
-    margin-left: 4px;
-    text-align: center;
-    border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #4a4a4a;
+  margin-left: 4px;
+  text-align: center;
+  border-radius: 6px;
 }
 
 .btn a:hover {
-    color: lightgray;
+  color: lightgray;
 }
 
 /* #MAIN */
 
 main {
-    height: calc(100vh - 220px);
-    overflow: auto;
+  height: calc(100vh - 220px);
+  overflow: auto;
 }
 
 .zoom-img {
-    
-    padding: 5px;
-    position: relative;
-    flex: 0 0 275px;
+  padding: 5px;
+  position: relative;
+  flex: 0 0 275px;
 }
 .zoom-img div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 4px 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 6px;
 }
 .zoom-img div:hover {
-
-    background-color: red;
-
+  background-color: red;
 }
 
 /* #FOOTER */
 
 footer {
-    background-color: #222222;
-    width: 100%;
-    height: 100px;
-    margin-top: 20px;
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
 }
 .footer-flex {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .controls-center {
-    flex-grow: 1;
-    
-} 
-
-.column-txt {
-        text-align: center;
-        font-size: 16px;
-    }
-
-.column-icon {
-    font-size: xx-large;
-    padding: 6px 10px;
-    text-align: center;
+  flex-grow: 1;
 }
 
+.column-txt {
+  text-align: center;
+  font-size: 16px;
+}
 
+.column-icon {
+  font-size: xx-large;
+  padding: 6px 10px;
+  text-align: center;
+}
 
 .column {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .end a {
-    text-decoration: none;
-    color: red;
-    padding: 10px;
-    background-color: #4a4a4a;
-    display: block;
-    height: 100%;
-    line-height: 82px;
+  text-decoration: none;
+  color: red;
+  padding: 10px;
+  background-color: #4a4a4a;
+  display: block;
+  height: 100%;
+  line-height: 82px;
 }
 
 .end a:hover {
-    background-color: #676565;
+  background-color: #676565;
 }
-
 
 .end {
-    height: 100%;
+  height: 100%;
 }
-
 
 .column-center-icon {
-    background-color: blue;
-    padding: 10px 0;
+  background-color: blue;
+  padding: 10px 0;
 }
 .xxlarge {
-    width: 170px;
+  width: 170px;
 }
 .fa-solid,
 .fas {
-    font-weight: 900;
-    margin-bottom: 6px;
+  font-weight: 900;
+  margin-bottom: 6px;
 }
 .controls-right {
-        height: 100%;
+  height: 100%;
 }
 
 .down {
-    align-self: center;
+  align-self: center;
 }
 
 .column-icon:hover {
-    color: #4bc800;
+  color: #4bc800;
 }
