@@ -60,6 +60,20 @@ header {
   display: block;
 }
 
+.btn-icon.close a {
+  width: 42px;
+  display: block;
+}
+
+.btn-icon.speaker a .fa-solid {
+  margin-bottom: 0;
+}
+
+.btn-icon.close a .fas {
+  margin-bottom: 0;
+}
+
+
 .btn a {
   text-decoration: none;
   color: white;
@@ -86,16 +100,51 @@ main {
   position: relative;
   flex: 0 0 275px;
 }
-.zoom-img div {
+.zoom-img .info-img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 5px;
+  left: 5px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 4px 6px;
+  cursor: pointer;
 }
-.zoom-img div:hover {
+.zoom-img .info-img:hover {
   background-color: red;
 }
+
+.zoom-img:hover .controls {
+  display: block;
+}
+
+.info-img .fa-solid
+{margin-bottom: 0;}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  display: none;
+}
+
+.controls a {
+    padding: 4px 6px;
+      cursor: pointer;
+      background-color: rgba(0, 68, 255, 0.9);
+      color: white;
+      margin: 0px 1px;
+      text-decoration: none;
+      border-radius: 6px;
+      
+}
+
+.controls a:hover {
+  background-color: rgba(2, 61, 223, 0.9);
+}
+
+.controls a .fa-solid {
+    margin-bottom: 0;
+    padding: 4px 6px;
+  }
 
 /* #FOOTER */
 
@@ -160,6 +209,7 @@ footer {
 .fas {
   font-weight: 900;
   margin-bottom: 6px;
+  cursor: pointer;
 }
 .controls-right {
   height: 100%;
